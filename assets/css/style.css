@@ -1,0 +1,103 @@
+* {
+  font-family: "Helvetica", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+.wrapper {
+  background-color: #fff;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+}
+
+.content {
+  padding: 0 20px;
+}
+
+.heading {
+  font-size: 24px;
+}
+.paragraph {
+  color: #000;
+  font-size: 14px;
+}
+
+/*** HEADER/NAVBAR ***/
+.logo {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 2rem;
+}
+header {
+  border-bottom: 3px solid #000;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+}
+
+ul.navbar-nav {
+  list-style: none;
+}
+
+.navbar-nav li {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  color: #aa1010;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  display: block;
+}
+
+ul.subnav {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: #fff;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+}
+
+.navbar-nav li:hover .subnav {
+  display: block;
+}
+
+ul.subnav li {
+  display: block;
+  text-align: center;
+  width: auto;
+  margin: auto;
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+}
+
+ul.navbar-nav > li {
+  position: relative;
+}
+/*** END HEADER/NAVBAR ***/
+
+/*** INTRO ***/
+.headshot {
+  margin-top: 30px;
+}
+
+/*** MOBILE STYLES **/
+@media screen and (max-width: 767px) {
+  .headshot {
+    display: none;
+  }
+}
